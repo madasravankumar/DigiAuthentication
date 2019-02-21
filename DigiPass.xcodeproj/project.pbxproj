@@ -8,20 +8,60 @@
 
 /* Begin PBXBuildFile section */
 		A0210FBC221DBA3400E9EBF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0210FBB221DBA3400E9EBF3 /* AppDelegate.swift */; };
-		A0210FBE221DBA3400E9EBF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0210FBD221DBA3400E9EBF3 /* ViewController.swift */; };
+		A0210FBE221DBA3400E9EBF3 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0210FBD221DBA3400E9EBF3 /* WelcomeViewController.swift */; };
 		A0210FC1221DBA3400E9EBF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0210FBF221DBA3400E9EBF3 /* Main.storyboard */; };
 		A0210FC3221DBA3E00E9EBF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0210FC2221DBA3E00E9EBF3 /* Assets.xcassets */; };
 		A0210FC6221DBA3E00E9EBF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0210FC4221DBA3E00E9EBF3 /* LaunchScreen.storyboard */; };
+		A0210FD4221DBCD800E9EBF3 /* PinLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0210FD3221DBCD800E9EBF3 /* PinLayout.framework */; };
+		A0210FD6221DBCDC00E9EBF3 /* PinLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0210FD3221DBCD800E9EBF3 /* PinLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A0210FDD221DD26A00E9EBF3 /* QRCodeScannerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0210FDC221DD26A00E9EBF3 /* QRCodeScannerSDK.framework */; };
+		A0210FDF221DD2D700E9EBF3 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0210FDE221DD2D700E9EBF3 /* ScannerViewController.swift */; };
+		A0210FE1221DD32300E9EBF3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0210FE0221DD32300E9EBF3 /* AudioToolbox.framework */; };
+		A0210FE3221DD33300E9EBF3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0210FE2221DD33300E9EBF3 /* AVFoundation.framework */; };
+		A0210FE5221DD33A00E9EBF3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0210FE4221DD33900E9EBF3 /* CoreGraphics.framework */; };
+		A0210FE7221DD34300E9EBF3 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0210FE6221DD34300E9EBF3 /* CoreMedia.framework */; };
+		A0210FE9221DD34D00E9EBF3 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0210FE8221DD34D00E9EBF3 /* CoreVideo.framework */; };
+		A0210FEB221DD36700E9EBF3 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A0210FEA221DD36700E9EBF3 /* libiconv.tbd */; };
+		A0210FED221DD37000E9EBF3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0210FEC221DD36F00E9EBF3 /* QuartzCore.framework */; };
+		A0210FEF221DD3A200E9EBF3 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A0210FEE221DD3A200E9EBF3 /* libc++.tbd */; };
+		A0210FF0221DD3B000E9EBF3 /* QRCodeScannerSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0210FDC221DD26A00E9EBF3 /* QRCodeScannerSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A0210FD7221DBCDC00E9EBF3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A0210FF0221DD3B000E9EBF3 /* QRCodeScannerSDK.framework in Embed Frameworks */,
+				A0210FD6221DBCDC00E9EBF3 /* PinLayout.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A0210FB8221DBA3400E9EBF3 /* DigiPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigiPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0210FBB221DBA3400E9EBF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A0210FBD221DBA3400E9EBF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A0210FBD221DBA3400E9EBF3 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		A0210FC0221DBA3400E9EBF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0210FC2221DBA3E00E9EBF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0210FC5221DBA3E00E9EBF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0210FC7221DBA3E00E9EBF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0210FD3221DBCD800E9EBF3 /* PinLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PinLayout.framework; path = Carthage/Build/iOS/PinLayout.framework; sourceTree = "<group>"; };
+		A0210FDC221DD26A00E9EBF3 /* QRCodeScannerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QRCodeScannerSDK.framework; sourceTree = "<group>"; };
+		A0210FDE221DD2D700E9EBF3 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		A0210FE0221DD32300E9EBF3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A0210FE2221DD33300E9EBF3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A0210FE4221DD33900E9EBF3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A0210FE6221DD34300E9EBF3 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		A0210FE8221DD34D00E9EBF3 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		A0210FEA221DD36700E9EBF3 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		A0210FEC221DD36F00E9EBF3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A0210FEE221DD3A200E9EBF3 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		A0210FF3221DD91A00E9EBF3 /* DigiPass-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DigiPass-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +69,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0210FEF221DD3A200E9EBF3 /* libc++.tbd in Frameworks */,
+				A0210FED221DD37000E9EBF3 /* QuartzCore.framework in Frameworks */,
+				A0210FEB221DD36700E9EBF3 /* libiconv.tbd in Frameworks */,
+				A0210FE9221DD34D00E9EBF3 /* CoreVideo.framework in Frameworks */,
+				A0210FE7221DD34300E9EBF3 /* CoreMedia.framework in Frameworks */,
+				A0210FE5221DD33A00E9EBF3 /* CoreGraphics.framework in Frameworks */,
+				A0210FE3221DD33300E9EBF3 /* AVFoundation.framework in Frameworks */,
+				A0210FE1221DD32300E9EBF3 /* AudioToolbox.framework in Frameworks */,
+				A0210FDD221DD26A00E9EBF3 /* QRCodeScannerSDK.framework in Frameworks */,
+				A0210FD4221DBCD800E9EBF3 /* PinLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +90,7 @@
 			children = (
 				A0210FBA221DBA3400E9EBF3 /* DigiPass */,
 				A0210FB9221DBA3400E9EBF3 /* Products */,
+				A0210FD0221DBCA600E9EBF3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +105,57 @@
 		A0210FBA221DBA3400E9EBF3 /* DigiPass */ = {
 			isa = PBXGroup;
 			children = (
+				A0210FDB221DD26A00E9EBF3 /* ThirdParty Frameworks */,
+				A0210FCE221DBA5300E9EBF3 /* Views */,
+				A0210FCD221DBA4700E9EBF3 /* Controllers */,
 				A0210FBB221DBA3400E9EBF3 /* AppDelegate.swift */,
-				A0210FBD221DBA3400E9EBF3 /* ViewController.swift */,
+				A0210FBD221DBA3400E9EBF3 /* WelcomeViewController.swift */,
 				A0210FBF221DBA3400E9EBF3 /* Main.storyboard */,
 				A0210FC2221DBA3E00E9EBF3 /* Assets.xcassets */,
 				A0210FC4221DBA3E00E9EBF3 /* LaunchScreen.storyboard */,
 				A0210FC7221DBA3E00E9EBF3 /* Info.plist */,
 			);
 			path = DigiPass;
+			sourceTree = "<group>";
+		};
+		A0210FCD221DBA4700E9EBF3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A0210FDE221DD2D700E9EBF3 /* ScannerViewController.swift */,
+				A0210FF3221DD91A00E9EBF3 /* DigiPass-Bridging-Header.h */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A0210FCE221DBA5300E9EBF3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A0210FD0221DBCA600E9EBF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0210FEE221DD3A200E9EBF3 /* libc++.tbd */,
+				A0210FEC221DD36F00E9EBF3 /* QuartzCore.framework */,
+				A0210FEA221DD36700E9EBF3 /* libiconv.tbd */,
+				A0210FE8221DD34D00E9EBF3 /* CoreVideo.framework */,
+				A0210FE6221DD34300E9EBF3 /* CoreMedia.framework */,
+				A0210FE4221DD33900E9EBF3 /* CoreGraphics.framework */,
+				A0210FE2221DD33300E9EBF3 /* AVFoundation.framework */,
+				A0210FE0221DD32300E9EBF3 /* AudioToolbox.framework */,
+				A0210FD3221DBCD800E9EBF3 /* PinLayout.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0210FDB221DD26A00E9EBF3 /* ThirdParty Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0210FDC221DD26A00E9EBF3 /* QRCodeScannerSDK.framework */,
+			);
+			path = "ThirdParty Frameworks";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +168,8 @@
 				A0210FB4221DBA3400E9EBF3 /* Sources */,
 				A0210FB5221DBA3400E9EBF3 /* Frameworks */,
 				A0210FB6221DBA3400E9EBF3 /* Resources */,
+				A0210FD7221DBCDC00E9EBF3 /* Embed Frameworks */,
+				A0210FD8221DBDAE00E9EBF3 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -96,6 +192,7 @@
 				TargetAttributes = {
 					A0210FB7221DBA3400E9EBF3 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -130,12 +227,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A0210FD8221DBDAE00E9EBF3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/PinLayout.framework",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/PinLayout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A0210FB4221DBA3400E9EBF3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0210FBE221DBA3400E9EBF3 /* ViewController.swift in Sources */,
+				A0210FBE221DBA3400E9EBF3 /* WelcomeViewController.swift in Sources */,
+				A0210FDF221DD2D700E9EBF3 /* ScannerViewController.swift in Sources */,
 				A0210FBC221DBA3400E9EBF3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +396,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/DigiPass/ThirdParty\\ Frameworks",
+				);
 				INFOPLIST_FILE = DigiPass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -288,6 +410,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ecknologic.DigiPass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DigiPass/Controllers/DigiPass-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,7 +421,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/DigiPass/ThirdParty\\ Frameworks",
+				);
 				INFOPLIST_FILE = DigiPass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,6 +435,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ecknologic.DigiPass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DigiPass/Controllers/DigiPass-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
