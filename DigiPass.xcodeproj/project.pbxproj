@@ -25,6 +25,8 @@
 		A0210FED221DD37000E9EBF3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0210FEC221DD36F00E9EBF3 /* QuartzCore.framework */; };
 		A0210FEF221DD3A200E9EBF3 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A0210FEE221DD3A200E9EBF3 /* libc++.tbd */; };
 		A0210FF0221DD3B000E9EBF3 /* QRCodeScannerSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0210FDC221DD26A00E9EBF3 /* QRCodeScannerSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A02C2DAB221EDFB000FD4AA6 /* libUtilitiesSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A02C2DAA221EDFAF00FD4AA6 /* libUtilitiesSDK.a */; };
+		A0C916EF221E3D42005DF74B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A0C916EE221E3D42005DF74B /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,6 +64,8 @@
 		A0210FEC221DD36F00E9EBF3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A0210FEE221DD3A200E9EBF3 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		A0210FF3221DD91A00E9EBF3 /* DigiPass-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DigiPass-Bridging-Header.h"; sourceTree = "<group>"; };
+		A02C2DAA221EDFAF00FD4AA6 /* libUtilitiesSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUtilitiesSDK.a; sourceTree = "<group>"; };
+		A0C916EE221E3D42005DF74B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 				A0210FE3221DD33300E9EBF3 /* AVFoundation.framework in Frameworks */,
 				A0210FE1221DD32300E9EBF3 /* AudioToolbox.framework in Frameworks */,
 				A0210FDD221DD26A00E9EBF3 /* QRCodeScannerSDK.framework in Frameworks */,
+				A02C2DAB221EDFB000FD4AA6 /* libUtilitiesSDK.a in Frameworks */,
 				A0210FD4221DBCD800E9EBF3 /* PinLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,6 +119,7 @@
 				A0210FC2221DBA3E00E9EBF3 /* Assets.xcassets */,
 				A0210FC4221DBA3E00E9EBF3 /* LaunchScreen.storyboard */,
 				A0210FC7221DBA3E00E9EBF3 /* Info.plist */,
+				A0C916EE221E3D42005DF74B /* README.md */,
 			);
 			path = DigiPass;
 			sourceTree = "<group>";
@@ -153,6 +159,7 @@
 		A0210FDB221DD26A00E9EBF3 /* ThirdParty Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A02C2DAA221EDFAF00FD4AA6 /* libUtilitiesSDK.a */,
 				A0210FDC221DD26A00E9EBF3 /* QRCodeScannerSDK.framework */,
 			);
 			path = "ThirdParty Frameworks";
@@ -221,6 +228,7 @@
 			files = (
 				A0210FC6221DBA3E00E9EBF3 /* LaunchScreen.storyboard in Resources */,
 				A0210FC3221DBA3E00E9EBF3 /* Assets.xcassets in Resources */,
+				A0C916EF221E3D42005DF74B /* README.md in Resources */,
 				A0210FC1221DBA3400E9EBF3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +406,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 643G3RL44Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -407,6 +416,11 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DigiPass/ThirdParty\\ Frameworks",
+					"$(PROJECT_DIR)/DigiPass/ThirdParty\\ Frameworks/libUtilitiesSDK.a",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ecknologic.DigiPass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +437,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 643G3RL44Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -432,6 +447,11 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DigiPass/ThirdParty\\ Frameworks",
+					"$(PROJECT_DIR)/DigiPass/ThirdParty\\ Frameworks/libUtilitiesSDK.a",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ecknologic.DigiPass;
 				PRODUCT_NAME = "$(TARGET_NAME)";

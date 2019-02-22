@@ -11,6 +11,12 @@ import UIKit
 class ScannerViewController: UIViewController {
     
 
+    override func loadView() {
+        super.loadView()
+        view = ScannerView()
+        view.backgroundColor = .gray
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,20 +30,41 @@ class ScannerViewController: UIViewController {
     
     // MARK:- custom methods
     private func scanButtonTapped() {
-        let qrVC = QRCodeScannerSDKViewController(delegate: self, vibrate: true, codeType: 1, use: UIImage(named: "QRScan_close.png"))
+        
     }
 }
 
-extension ScannerViewController: QRCodeScannerSDKDelegate {
-    func qrCodeScannerSDKController(_ controller: QRCodeScannerSDKViewController!, didScanResult result: String!, withCodeType codeType: Int32) {
-        
+
+class ScannerView: UIView {
+    
+    let rootView = UIView()
+    
+    // MARK:- intilizers
+    override init(frame: CGRect) {
+        super.init(frame: .zero)
+        setup()
     }
     
-    func qrCodeScannerSDKControllerDidCancel(_ controller: QRCodeScannerSDKViewController!) {
-        
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
     }
     
-    func qrCodeScannerSDKController(_ controller: QRCodeScannerSDKViewController!, threwException exception: QRCodeScannerSDKException!) {
+    convenience init() {
+        self.init(frame: .zero)
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        layout()
+    }
+    
+    // MARK:- custom methods
+    private func setup() {
         
+        addSubview(rootView)
+    }
+    
+    private func layout() {
+        rootView.pin.left().right().top().bottom()
     }
 }
